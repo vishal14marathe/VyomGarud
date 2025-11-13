@@ -1,17 +1,18 @@
+// src/App.jsx
 import { useState, useEffect } from "react";
-import Header from "./components/Header";
-import Hero from "./components/Hero";
-import About from "./components/About";
-import Capabilities from "./components/Capabilities";
-import Highlights from "./components/Highlights";
-import Contact from "./components/Contact";
+
+import Header from "./Components/Header";
 import "./index.css";
+import Hero from "./Components/Hero";
+import About from "./Components/About";
+import Capabilities from "./Components/Capabilities";
+import Highlights from "./Components/Highlights";
+import Contact from "./Components/Contact";
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    // Simulate loading
     const timer = setTimeout(() => {
       setIsLoading(false);
     }, 1000);
